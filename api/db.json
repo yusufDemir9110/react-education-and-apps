@@ -5,7 +5,7 @@
       "categoryId": 2,
       "productName": "Chai",
       "quantityPerUnit": "48 - 6 oz jars",
-      "unitPrice": "24",
+      "unitPrice": "80",
       "unitsInStock": 53
     },
     {
@@ -615,6 +615,21 @@
       "quantityPerUnit": "1",
       "unitsInStock": "2",
       "id": 78
+    },
+    {
+      "productName": "laptop",
+      "categoryId": 1,
+      "unitPrice": "1",
+      "quantityPerUnit": "1",
+      "unitsInStock": "2",
+      "id": 79
+    },
+    {
+      "categoryId": 1,
+      "unitPrice": "25",
+      "quantityPerUnit": "1",
+      "unitsInStock": "2",
+      "id": 80
     }
   ],
   "categories": [

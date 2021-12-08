@@ -7,7 +7,8 @@ const ProductDetail = ({
     categories,
     product,
     onSave,
-    onChange
+    onChange,
+    errors
 }) => {
     return (
         <form onSubmit={onSave}>
@@ -17,7 +18,7 @@ const ProductDetail = ({
                 label="Product Name"
                 value={product.productName}
                 onChange={onChange}
-                error="Hata"
+                error={errors.productName}
             />
             <SelectInput
                 name='categoryId'
@@ -29,28 +30,28 @@ const ProductDetail = ({
                     text: category.categoryName
                 }))}
                 onChange={onChange}
-                error='Hata'
+                error={errors.categoryId}
             />
             <TextInput
                 name="unitPrice"
                 label="Unit Price"
                 value={product.unitPrice}
                 onChange={onChange}
-                error="Hata"
+                error={errors.unitPrice}
             />
             <TextInput
                 name="quantityPerUnit"
                 label="Quantity Per Unit"
                 value={product.quantityPerUnit}
                 onChange={onChange}
-                error="Hata"
+                error={errors.quantityPerUnit}
             />
             <TextInput
                 name="unitsInStock"
                 label="Units In Stocks"
                 value={product.unitsInStock}
                 onChange={onChange}
-                error="Hata"
+                error={errors.unitsInStock}
             />
             <button type="submit" className="btn btn-success">Save</button>
         </form>

@@ -4,6 +4,7 @@ import Navi from "../navi/Navi";
 import Dashboard from "./Dashboard";
 import CartDetail from "../cart/CartDetail";
 import AddOrUpdateProduct from "../products/AddOrUpdateProduct";
+import NotFound from "../common/NotFound";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Route exact path='/product' component={Dashboard}/>
         <Route exact path='/cart' component={CartDetail}/>
         <Route path='/saveproduct/:productId' component={AddOrUpdateProduct}/>
+        <Route path='/saveproduct/' component={AddOrUpdateProduct}/>
+        <Route component={NotFound}></Route>
       </Switch>
-      
     </Container>
   );
 }
