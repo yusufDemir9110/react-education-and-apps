@@ -630,6 +630,14 @@
       "quantityPerUnit": "1",
       "unitsInStock": "2",
       "id": 80
+    },
+    {
+      "productName": "trenckot",
+      "categoryId": 3,
+      "unitPrice": "120",
+      "quantityPerUnit": "5",
+      "unitsInStock": "5",
+      "id": 81
     }
   ],
   "categories": [
